@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+* {
+  scrollbar-width: none;
+}
+
+/* Dashboard layout - hide header and footer */
+body.dashboard-active .dashboard-hide-when-active {
+  display: none;
+}
+
+/* Custom scrollbar for dashboard */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 5px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
